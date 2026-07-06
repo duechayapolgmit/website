@@ -1,0 +1,34 @@
+{
+    "general": {
+        "email": {
+            "name": "Email",
+            "icon": "/socials/email.png",
+            "link": "mailto:duechayapolsbs@gmail.com"
+        },
+        "github": {
+            "name": "GitHub",
+            "icon": "/socials/github.png",
+            "link": "https://github.com/duechayapolgmit"
+        },
+        "bluesky": {
+            "name": "Bluesky",
+            "icon": "/socials/bluesky.png",
+            "link": "https://bsky.app/profile/duechayapol.bsky.social"
+        },
+        "instagram": {
+            "name": "Instagram",
+            "icon": "/socials/instagram.png",
+            "link": "https://instagram.com/duechayapol"
+        },
+        "youtube": {
+            "name": "YouTube",
+            "icon": "/socials/youtube.png",
+            "link": "https://www.youtube.com/@duechayapol"
+        },
+        "twitch": {
+            "name": "Twitch",
+            "icon": "/socials/twitch.png",
+            "link": "https://twitch.tv/duechayapol"
+        }
+    }
+}
