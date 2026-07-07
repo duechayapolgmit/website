@@ -1,0 +1,16 @@
+'use client'
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+export default function Navbar() {
+    const path = usePathname()
+    const pathName = path.split('/')
+
+    return (
+        <nav className="min-w-full bg-black/85 p-4
+                        text-2xl">
+            <Link className="hover:border hover:border-white p-1" href="/">{'< HOME PAGE'}</Link>
+        </nav>
+    )
+}
