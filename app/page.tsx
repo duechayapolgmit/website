@@ -1,4 +1,5 @@
 import { Socials } from "@/components/socials";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,15 +10,15 @@ export default function Home() {
         <img className="my-1" src={"/logo.png"}/>
         <Socials type={"general"} size={50}/>
         <div className="flex my-6 content-center items-stretch">
-          <HomeButton name="Software / Web Development"/>
-          <HomeButton name="MCC Live Show"/>
+          <HomeButton name="Software / Web Development" link="/dev" />
+          <HomeButton name="MCC Live Show" link="/mccliveshow" />
         </div>
       </div>
     </div>
   );
 }
 
-function HomeButton({name}: {name: string}) {
+function HomeButton({name, link}: {name: string, link: string}) {
   // specific for mcc live show logo
   const wrapper = (name: string) => {
     if (name == "MCC Live Show") return (<img src={"mccls-logo.png"}/>)
@@ -25,10 +26,10 @@ function HomeButton({name}: {name: string}) {
   }
 
   return (
-    <div className="border border-white mx-1 p-5 
+    <Link href={link} className="border border-white mx-1 p-5 
                     font-metropolis-bold text-3xl uppercase w-90 text-center content-center
                     transition hover:-translate-0.5  hover:bg-black hover:cursor-pointer">
       {wrapper(name)}
-    </div>
+    </Link>
   )
 }
