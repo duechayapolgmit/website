@@ -8,9 +8,9 @@ export default function Navbar() {
     const pathName = path.split('/')
 
     return (
-        <nav className="min-w-full bg-black/85 p-4
+        <nav className="min-w-full bg-teal-900 p-4
                         text-2xl">
-            <Link className="hover:border hover:border-white p-1" href="/">{'< HOME PAGE'}</Link>
+            <Link className="hover:border-b hover:border-white p-1" href="/">{'< HOME PAGE'}</Link>
         </nav>
     )
 }
