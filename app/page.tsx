@@ -7,12 +7,18 @@ export default function Home() {
                     bg-radial from-teal-600 to-teal-800">
       <div className="flex flex-col flex-1 items-center justify-center max-w-250
                   bg-black/75 font-sans p-4">
-        <img className="my-1" src={"/logo.png"}/>
-        <Socials type={"general"} size={50}/>
-        <div className="flex my-6 content-center items-stretch">
+        <span className="text-2xl font-metropolis-black uppercase">This is</span>
+        <img className="mt-1" src={"/logo.png"}/>
+        <div className="mt-3 text-xl">
+          Hello, it's me Due, or Duechayapol <i>{"(pronounced Due-cha-ya-pol) "}</i> on the Internet. <br/>
+          I am a Thai software engineer, currently living in Ireland, with a Masters in Computing. I also do content creation and live commentary on the side as well, with this tiny thing called MCC Live Show.<br/>
+          Below are my projects and portfolio that I have done!
+        </div>
+        <div className="flex mt-6 content-center items-stretch">
           <HomeButton name="Software / Web Development" link="/dev" />
           <HomeButton name="MCC Live Show" link="/mccliveshow" />
         </div>
+        <div className="mt-6"><Socials type={"general"} size={50}/></div>
       </div>
     </div>
   );
