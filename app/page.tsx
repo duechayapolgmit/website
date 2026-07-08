@@ -1,4 +1,4 @@
-import { Socials } from "@/components/socials";
+import { Socials } from "@/components/data_display/socials";
 import Link from "next/link";
 
 export default function Home() {
