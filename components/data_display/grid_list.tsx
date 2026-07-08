@@ -6,11 +6,11 @@ export interface IGridListElement {
     lst: string[]
 }
 
-export default function GridList({elements} : {elements: IGridListElement[]}) {
+export default function GridList({elements}: {elements: IGridListElement[]}) {
     const getList = (lst: string[]) => {
         const lstParts = lst.map((item) => {
             return (
-                <div>{item}</div>
+                <div key={item}>{item}</div>
             )
         })
 

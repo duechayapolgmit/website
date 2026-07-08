@@ -1,11 +1,15 @@
 import Content from "@/components/page_elements/content";
 import GridList, { IGridListElement } from "@/components/data_display/grid_list";
 import Header from "@/components/page_elements/header";
+import CardGrid, { ICard } from "@/components/data_display/card_grid";
 
 import dataTechStack from '@/data/dev/tech_stack.json'
+import dataPortfolio from '@/data/dev/projects.json'
 
 export default function Page() {
+
     const techStack: IGridListElement[] = dataTechStack;
+    const portfolio: ICard[] = dataPortfolio;
 
     return (
         <div>
@@ -15,6 +19,7 @@ export default function Page() {
                     as well as making some fun stuff!"
                     image="/backgrounds/dev.png"/>
             <Content header={"My Tech Stack"} content={<GridList elements={techStack}/>}/>
-            projects
-        </div>)
+            <Content header={"My Portfolio"} content={<CardGrid elements={portfolio}/>} background="lightgray"/>
+        </div>
+    )
 }

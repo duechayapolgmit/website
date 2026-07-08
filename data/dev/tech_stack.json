@@ -7,7 +7,7 @@
     {
         "icon": "/icons/tech_web.png",
         "header": "Web Technologies",
-        "lst": ["HTML5", "CSS3", "React", "Next.js", "Angular", "Node.js", "REST APIs"]
+        "lst": ["HTML5", "CSS3", "React", "Next.js", "Expo", "Angular", "Node.js", "REST APIs"]
     },
     {
         "icon": "/icons/tech_database.png",
@@ -17,6 +17,6 @@
     {
         "icon": "/icons/tech_ops.png",
         "header": "DevOps & Platform",
-        "lst": ["CI/CD Pipelines", "Jenkins", "GitHub Actions", "Docker", "Kubernetes", "Amazon AWS", "Linux"]
+        "lst": ["CI/CD Pipelines", "Jenkins", "GitHub Actions", "Docker", "Kubernetes", "Amazon AWS", "ArgoCD", "Linux"]
     }
 ]
