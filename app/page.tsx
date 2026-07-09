@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-row flex-1 items-center justify-center min-w-full
-                    bg-radial from-teal-600 to-teal-800">
+                    bg-radial from-teal-400 to-teal-800">
       <div className="flex flex-col flex-1 items-center justify-center max-w-250
                   bg-black/75 font-sans p-4">
         <span className="text-2xl font-metropolis-black uppercase">This is</span>

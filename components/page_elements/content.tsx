@@ -1,5 +1,5 @@
 export default function Content(
-    {header = "", content, background = "white"}: {header: string, content: any, background?: string}) 
+    {header = "", content, background = "white"}: {header?: string, content: any, background?: string}) 
 {
     return (
         <div className="bg-white text-black p-6"

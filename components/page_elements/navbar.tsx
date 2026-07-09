@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link";
+import Image from 'next/image';
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -9,8 +10,10 @@ export default function Navbar() {
 
     return (
         <nav className="min-w-full bg-teal-900 p-4
-                        text-2xl">
-            <Link className="hover:border-b hover:border-white p-1" href="/">{'< HOME PAGE'}</Link>
+                        flex flex-row justify-between text-2xl">
+            <Link className="hover:border-b hover:border-white px-1 pt-1 pb-0.5" href="/">{'< HOME PAGE'}</Link>
+            <Image className="mt-1 justify-self-end" 
+                alt="Duechayapol" src={"/logo.png"} width={250} height={30}/>
         </nav>
     )
 }

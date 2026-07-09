@@ -15,8 +15,8 @@ export default function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <section>
-        <div className="w-350 flex flex-col flex-1 items-left bg-cyan-500 my-5">
+    <section className="">
+        <div className="w-350 flex flex-col flex-1 items-left bg-white my-5">
             <Navbar/>
             {children}
             <Footer/>

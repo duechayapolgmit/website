@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`h-full antialiased`}
+      className={`h-full antialiased `}
     >
       <body className="min-h-full min-w-full flex flex-col items-center">{children}</body>
     </html>
