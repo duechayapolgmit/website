@@ -1,5 +1,22 @@
 [
     {
-        
+        "icon": "/mccliveshow/icons/liveshow.png",
+        "header": "Live Commentary",
+        "description": "At its heart, MCC Live Show is a live commentary stream, with pre-event analysis and live play-by-play commentary of an event."
+    },
+    {
+        "icon": "/mccliveshow/icons/analysis.png",
+        "header": "Event Analysis",
+        "description": "MCC Live Show thrives in giving analysis of an event and insights to each of the players, teams, and games of the event via the live commentary and content surrounding the event."
+    },
+    {
+        "icon": "/mccliveshow/icons/engagement.png",
+        "header": "Audience Engagement",
+        "description": "Via livestreams and social media elements, such as viewer voting and popularity ranking, viewers are able to engage with the content provided to retain an audience for MCC Live Show itself."
+    },
+    {
+        "icon": "/mccliveshow/icons/guests.png",
+        "header": "Guests and Collaborations",
+        "description": "With interviews and special cameos, MCC Live Show is able to give a spotlight to content creators in the same space, via rule video appearances, interviews, etc."
     }
 ]

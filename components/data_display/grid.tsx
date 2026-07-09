@@ -7,12 +7,12 @@ export interface IGridElement {
     lst?: string[]
 }
 
-export default function Grid({elements}: {elements: IGridElement[]}) {
+export default function Grid({elements, iconSize = 100}: {elements: IGridElement[], iconSize?: number}) {
     const getContent = (item: IGridElement) => {
         let content = [];
 
-        if (item.description != null) content.push(<GridContentText text={item.description}/>)
-        if (item.lst != null) content.push(<GridContentList lst={item.lst}/>)
+        if (item.description != null) content.push(<GridContentText key={"Description"} text={item.description}/>)
+        if (item.lst != null) content.push(<GridContentList key={"List"} lst={item.lst}/>)
         
         return (
             <div>
@@ -26,8 +26,8 @@ export default function Grid({elements}: {elements: IGridElement[]}) {
         const lstParts = elements.map((item) => {
             return (
                 <div key={item.header} className='flex flex-col flex-1 text-center items-center'>
-                    <div className='bg-cyan-900 rounded-3xl'>
-                        <Image src={item.icon} width={100} height={100} alt={item.header}/>
+                    <div className='bg-cyan-900 rounded-3xl p-1.5'>
+                        <Image src={item.icon} width={iconSize} height={iconSize} alt={item.header}/>
                     </div>
                     <h1 className='font-metropolis-bold text-3xl'>
                         {item.header}
@@ -38,7 +38,7 @@ export default function Grid({elements}: {elements: IGridElement[]}) {
         });
 
         return (
-            <div className='w-full flex flex-row flex-auto justify-around'>
+            <div className='w-full flex flex-row flex-auto justify-around gap-2'>
                 {lstParts}
             </div>
         )

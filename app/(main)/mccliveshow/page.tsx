@@ -1,6 +1,9 @@
 import Description from "@/components/data_display/description";
+import Grid from "@/components/data_display/grid";
 import Content from "@/components/page_elements/content";
 import Header from "@/components/page_elements/header";
+
+import dataContent from '@/data/mccliveshow/content.json';
 
 const description = ` 
     Established in 2021, MCC Live Show has been one of the channels covering the popular Minecraft tournament, MC Championship. (or MCC for short)
@@ -15,7 +18,7 @@ export default function Page() {
                     subtext="MCC Live Show is a fan-made project for a Minecraft tournament, MC Championship, but it's not an ordinary fan-made project..."
                     image="/backgrounds/mccliveshow.png"/>
             <Content content={<Description text={description}/>}/>
-            what live show does<br/>
+            <Content content={<Grid elements={dataContent} iconSize={90}/>} background="lightgray"/>
             statistics<br/>
             watch now!
         </div>)
