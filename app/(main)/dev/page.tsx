@@ -1,5 +1,5 @@
 import Content from "@/components/page_elements/content";
-import GridList, { IGridListElement } from "@/components/data_display/grid_list";
+import Grid, { IGridElement } from "@/components/data_display/grid";
 import Header from "@/components/page_elements/header";
 import CardGrid, { ICard } from "@/components/data_display/card_grid";
 
@@ -8,7 +8,7 @@ import dataPortfolio from '@/data/dev/projects.json'
 
 export default function Page() {
 
-    const techStack: IGridListElement[] = dataTechStack;
+    const techStack: IGridElement[] = dataTechStack;
     const portfolio: ICard[] = dataPortfolio;
 
     return (
@@ -18,7 +18,7 @@ export default function Page() {
                     and now pursuing a path to create solutions for others via programming and software engineering, 
                     as well as making some fun stuff!"
                     image="/backgrounds/dev.png"/>
-            <Content header={"My Tech Stack"} content={<GridList elements={techStack}/>}/>
+            <Content header={"My Tech Stack"} content={<Grid elements={techStack}/>}/>
             <Content header={"My Portfolio"} content={<CardGrid elements={portfolio}/>} background="lightgray"/>
         </div>
     )
