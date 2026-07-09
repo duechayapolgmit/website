@@ -1,6 +1,6 @@
 [
     {
-        "image": "/dev_projects/traffic_analyser.png",
+        "image": "/dev/dev_projects/traffic_analyser.png",
         "title": "Traffic Analyser",
         "subtitle": "Masters Thesis Project",
         "description": "Project involving comparisons and implementation of advanced object detection models - YOLOv11 and EfficientDet, via Python scripts and an Expo web application",
@@ -8,14 +8,14 @@
         "tags": ["Machine Learning", "Expo", "Python", "TypeScript"]
     },
     {
-        "image": "/dev_projects/mccls-graphics.png",
+        "image": "/dev/dev_projects/mccls-graphics.png",
         "title": "MCC Live Show - Graphics",
         "description": "Responsive Next.js web application, displaying live graphical overlays and content tools for MCC Live Show",
         "link": "https://github.com/duechayapolgmit/mccls-graphics",
         "tags": ["Web Development", "Next.js", "HTML", "CSS", "TypeScript", "JavaScript"]
     },
     {
-        "image": "/dev_projects/cloud-native.png",
+        "image": "/dev/dev_projects/cloud-native.png",
         "title": "Cloud Native Solution via Amazon AWS using Jenkins",
         "subtitle": "Masters Project",
         "description": "Implemented an Amazon AWS solution using Jenkins as the main CI/CD platform, with comparisons to GitHub Actions",
@@ -23,7 +23,7 @@
         "tags": ["Cloud Native Computing", "DevOps", "Amazon AWS", "ArgoCD", "Kubernetes", "Docker", "Jenkins"]
     },
     {
-        "image": "/dev_projects/dep-fitness.png",
+        "image": "/dev/dev_projects/dep-fitness.png",
         "title": "Dep Fitness - DevOps",
         "subtitle": "Final Year Bachelors Dissertation Project",
         "description": "Implemented DevOps solutions to a fitness web application, as part of a group project. Focused on theoretical solutions and implementations of workflows",
@@ -31,7 +31,7 @@
         "tags": ["DevOps", "GitHub Actions"]
     },
     {
-        "image": "/dev_projects/wayfinder.png",
+        "image": "/dev/dev_projects/wayfinder.png",
         "title": "Wayfinder (Minecraft Minigame)",
         "description": "A work-in-progress Minecraft minigame project, using Java as the main resource with APIs for Minecraft server plugins",
         "link": "https://github.com/duechayapolgmit/ae-game-wayfinder",

@@ -1,21 +1,21 @@
 [
     {
-        "icon": "/icons/tech_languages.png",
+        "icon": "/dev/icons/tech_languages.png",
         "header": "Languages",
         "lst": ["Java", "Python", "JavaScript", "TypeScript", "C", "C#", "Ruby", "Lua"]
     },
     {
-        "icon": "/icons/tech_web.png",
+        "icon": "/dev/icons/tech_web.png",
         "header": "Web Technologies",
         "lst": ["HTML5", "CSS3", "React", "Next.js", "Expo", "Angular", "Node.js", "REST APIs"]
     },
     {
-        "icon": "/icons/tech_database.png",
+        "icon": "/dev/icons/tech_database.png",
         "header": "Databases",
         "lst": ["MySQL", "MongoDB"]
     },
     {
-        "icon": "/icons/tech_ops.png",
+        "icon": "/dev/icons/tech_ops.png",
         "header": "DevOps & Platform",
         "lst": ["CI/CD Pipelines", "Jenkins", "GitHub Actions", "Docker", "Kubernetes", "Amazon AWS", "ArgoCD", "Linux"]
     }
