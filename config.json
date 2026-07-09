@@ -1,5 +1,8 @@
 {
     "home": {
         "socials": ["email", "github", "bluesky", "youtube", "twitch", "instagram"]
+    },
+    "mccliveshow": {
+        "video_link": "https://www.youtube.com/embed/XmFaQpz0Tok?si=YZJrUgeSsRFa6MLy"
     }
 }

@@ -1,5 +1,6 @@
 export interface IContentOptions {
-    contentPaddingHeight?: number
+    contentPaddingHeight?: number,
+    noBackgroundColourOnImage?: boolean
 }
 
 export default function Content(
@@ -7,8 +8,13 @@ export default function Content(
     {header?: string, content: any, footer?: string, background?: string, backgroundImage?: string, options?: IContentOptions}) 
 {
     const getAllClassName = () => {
-        if (backgroundImage) return "bg-black/75 bg-blend-overlay text-white p-6"
-        if (background) return "bg-white text-black p-6";
+        let res = 'p-6 '
+
+        if (!options?.noBackgroundColourOnImage) res += "bg-black/75 bg-blend-overlay ";
+        if (backgroundImage) res += 'text-white ';
+        if (background && !backgroundImage) res += "bg-white text-black ";
+        
+        return res;
     }
     const getAllStyle = () => {
         if (backgroundImage) return {backgroundImage: `url('${backgroundImage}'`};
@@ -18,8 +24,7 @@ export default function Content(
     const getContentStyle = () => {
         if (options?.contentPaddingHeight != null) return {
             paddingTop: options.contentPaddingHeight+"em", 
-            paddingBottom: options.contentPaddingHeight+"em"
-        };
+            paddingBottom: options.contentPaddingHeight+"em"};
         return {};
     }
 

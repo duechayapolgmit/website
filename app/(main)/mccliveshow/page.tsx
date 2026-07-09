@@ -1,8 +1,10 @@
 import Description from "@/components/data_display/description";
 import Grid, { IGridOptions } from "@/components/data_display/grid";
+import YouTubeEmbed from "@/components/data_display/youtube_embed";
 import Content, { IContentOptions } from "@/components/page_elements/content";
 import Header from "@/components/page_elements/header";
 
+import config from '@/config.json'
 import dataContent from '@/data/mccliveshow/content.json';
 import dataStatistics from '@/data/mccliveshow/statistics.json';
 
@@ -12,13 +14,9 @@ const description = `
     From the main staple of live commentaries, clip compilations, to video analysis, MCC Live Show provides plenty of content for MCC viewers alike.
                     `
 
-const statsGridOptions: IGridOptions = {
-    bigHeaders: true,
-}
-
-const statsContentOptions: IContentOptions = {
-    contentPaddingHeight: 6
-}
+const statsGridOptions: IGridOptions = {bigHeaders: true}
+const statsContentOptions: IContentOptions = {contentPaddingHeight: 6}
+const ytContentOptions: IContentOptions = {noBackgroundColourOnImage: true}
 
 export default function Page() {
     return (
@@ -32,6 +30,9 @@ export default function Page() {
             <Content header="In Numbers" content={<Grid elements={dataStatistics} options={statsGridOptions}/>} footer="As of June 2026" 
                      backgroundImage="/mccliveshow/backgrounds/statistics.png"
                      options={statsContentOptions}/>
-            watch now!
+            <Content header="Want a taste?" 
+                     content={<YouTubeEmbed description="If you are curious and want to find out more, here's a live commentary stream I did!" link={config.mccliveshow.video_link}/>}
+                     backgroundImage="/mccliveshow/backgrounds/liveshow.png"
+                     options={ytContentOptions}/>
         </div>)
 }
