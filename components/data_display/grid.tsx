@@ -1,13 +1,17 @@
 import Image from 'next/image';
 
 export interface IGridElement {
-    icon: string,
+    icon?: string,
     header: string,
     description?: string,
     lst?: string[]
 }
 
-export default function Grid({elements, iconSize = 100}: {elements: IGridElement[], iconSize?: number}) {
+export interface IGridOptions {
+    bigHeaders?: boolean
+}
+
+export default function Grid({elements, iconSize = 100, options}: {elements: IGridElement[], iconSize?: number, options?: IGridOptions}) {
     const getContent = (item: IGridElement) => {
         let content = [];
 
@@ -19,17 +23,28 @@ export default function Grid({elements, iconSize = 100}: {elements: IGridElement
                 {content}
             </div>
         )
-        
+    }
+
+    const getHeaderClassNames = () => {
+        let res = ''
+
+        // decides the size of the header
+        if (options?.bigHeaders == true) res += 'font-metropolis-black text-7xl ';
+        else res += 'font-metropolis-bold text-3xl';
+
+        return res;
     }
 
     const getGrid = () => {
         const lstParts = elements.map((item) => {
             return (
                 <div key={item.header} className='flex flex-col flex-1 text-center items-center'>
-                    <div className='bg-cyan-900 rounded-3xl p-1.5'>
-                        <Image src={item.icon} width={iconSize} height={iconSize} alt={item.header}/>
-                    </div>
-                    <h1 className='font-metropolis-bold text-3xl'>
+                    { item.icon == null ? "" :
+                        <div className='bg-cyan-900 rounded-3xl p-1.5'>
+                            <Image src={item.icon} width={iconSize} height={iconSize} alt={item.header}/>
+                        </div>
+                    }
+                    <h1 className={getHeaderClassNames()}>
                         {item.header}
                     </h1>
                     <div className='text-xl'>{getContent(item)}</div>

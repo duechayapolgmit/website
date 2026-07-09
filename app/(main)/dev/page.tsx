@@ -19,7 +19,8 @@ export default function Page() {
                     as well as making some fun stuff!"
                     image="/backgrounds/dev.png"/>
             <Content header={"My Tech Stack"} content={<Grid elements={techStack}/>}/>
-            <Content header={"My Portfolio"} content={<CardGrid elements={portfolio}/>} background="lightgray"/>
+            <Content header={"My Portfolio"} content={<CardGrid elements={portfolio}/>} 
+                     background="lightgray"/>
         </div>
     )
 }

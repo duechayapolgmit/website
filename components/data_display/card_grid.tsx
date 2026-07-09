@@ -36,7 +36,7 @@ function Card({data}: {data: ICard}) {
     const getTags = (tags: string[]) => {
         const lst = tags.map((element) => {
             return (
-                <div className='bg-cyan-900 mt-2 mr-2 px-2 text-white rounded-xl'>
+                <div key={element} className='bg-cyan-900 mt-2 mr-2 px-2 text-white rounded-xl'>
                     {element}
                 </div>
             )
