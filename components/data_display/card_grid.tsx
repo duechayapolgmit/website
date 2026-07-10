@@ -20,7 +20,7 @@ export default function CardGrid({elements}: {elements: ICard[]}) {
             }
         )
         return (
-            <div className='grid grid-cols-3 gap-3'>
+            <div className='grid lg:grid-cols-2 xl:grid-cols-3 gap-3'>
                 {lst}
             </div>
         )

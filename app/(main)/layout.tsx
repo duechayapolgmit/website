@@ -16,7 +16,7 @@ export default function Layout({
 }) {
   return (
     <section className="">
-        <div className="w-350 flex flex-col flex-1 items-left bg-white my-5">
+        <div className="md:w-200 lg:w-250 xl:w-7xl flex flex-col flex-1 items-left bg-white my-5">
             <Navbar/>
             {children}
             <Footer/>

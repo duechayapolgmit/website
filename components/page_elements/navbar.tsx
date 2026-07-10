@@ -10,10 +10,11 @@ export default function Navbar() {
 
     return (
         <nav className="min-w-full bg-teal-900 p-4
-                        flex flex-row justify-between text-2xl">
+                        flex flex-col md:flex-row justify-center md:justify-between
+                        text-center place-items-center md:text-left text-2xl">
             <Link className="hover:border-b hover:border-white px-1 pt-1 pb-0.5" href="/">{'< HOME PAGE'}</Link>
-            <Image className="mt-1 justify-self-end" 
-                alt="Duechayapol" src={"/logo.png"} width={250} height={30}/>
+            <Image className="mt-1 md:justify-self-end" 
+                alt="Duechayapol" src={"/logo.png"} width={250} height={20}/>
         </nav>
     )
 }
