@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import { ViewTransition } from "react";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,7 +29,11 @@ export default function RootLayout({
       lang="en"
       className={`h-full antialiased `}
     >
-      <body className="min-h-full min-w-full flex flex-col items-center justify-center">{children}</body>
+      <body className="min-h-full min-w-full flex flex-col items-center justify-center">
+        <ViewTransition enter="">
+          {children}
+        </ViewTransition>
+      </body>
     </html>
   );
 }
