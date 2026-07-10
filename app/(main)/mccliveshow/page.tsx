@@ -18,7 +18,7 @@ const description = `
 const socialsOptions: ISocialsOptions = {invert: true}
 const statsGridOptions: IGridOptions = {bigHeaders: true}
 const statsContentOptions: IContentOptions = {contentPaddingHeight: 6}
-const ytContentOptions: IContentOptions = {noBackgroundColourOnImage: true}
+const lsBackgroundContentOptions: IContentOptions = {noBackgroundColourOnImage: true}
 
 export default function Page() {
     return (
@@ -26,8 +26,13 @@ export default function Page() {
             <Header text="Live commentary at its finest." 
                     subtext="MCC Live Show is a fan-made project for a Minecraft tournament, MC Championship, but it's not an ordinary fan-made project..."
                     image="/backgrounds/mccliveshow.png"/>
-            <Content content={<Description text={description}/>}/>
-            <Content content={<Socials type="mccliveshow" size={50} options={socialsOptions}/>}/>
+            <Content content={<div className="flex justify-center"><img src={"mccls-logo.png"} width={375}/></div>}
+                     backgroundImage="/mccliveshow/backgrounds/liveshow.png"
+                     options={lsBackgroundContentOptions}/>
+            <Content content={<div>
+                                <Description text={description}/>
+                                <Socials type="mccliveshow" size={50} options={socialsOptions}/>
+                              </div>}/>
             <Content content={<Grid elements={dataContent} iconSize={90}/>} 
                      background="lightgray"/>
             <Content header="In Numbers" content={<Grid elements={dataStatistics} options={statsGridOptions}/>} footer="As of June 2026" 
@@ -36,6 +41,6 @@ export default function Page() {
             <Content header="Want a taste?" 
                      content={<YouTubeEmbed description="If you are curious and want to find out more, here's a live commentary stream I did!" link={config.mccliveshow.video_link}/>}
                      backgroundImage="/mccliveshow/backgrounds/liveshow.png"
-                     options={ytContentOptions}/>
+                     options={lsBackgroundContentOptions}/>
         </div>)
 }
