@@ -3,6 +3,7 @@
         "socials": ["email", "github", "bluesky", "youtube", "twitch", "instagram"]
     },
     "mccliveshow": {
+        "socials": ["youtube", "twitter"],
         "video_link": "https://www.youtube.com/embed/XmFaQpz0Tok?si=YZJrUgeSsRFa6MLy"
     }
 }

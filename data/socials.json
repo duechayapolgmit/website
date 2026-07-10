@@ -30,5 +30,17 @@
             "icon": "/socials/twitch.png",
             "link": "https://twitch.tv/duechayapol"
         }
+    },
+    "mccliveshow": {
+        "youtube": {
+            "name": "YouTube",
+            "icon": "/socials/youtube.png",
+            "link": "https://www.youtube.com/@mccliveshow_"
+        },
+        "twitter": {
+            "name": "Twitter",
+            "icon": "/socials/twitter.png",
+            "link": "https://x.com/mccliveshow"
+        }
     }
 }

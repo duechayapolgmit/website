@@ -1,5 +1,6 @@
 import Description from "@/components/data_display/description";
 import Grid, { IGridOptions } from "@/components/data_display/grid";
+import { Socials, ISocialsOptions } from "@/components/data_display/socials";
 import YouTubeEmbed from "@/components/data_display/youtube_embed";
 import Content, { IContentOptions } from "@/components/page_elements/content";
 import Header from "@/components/page_elements/header";
@@ -14,6 +15,7 @@ const description = `
     From the main staple of live commentaries, clip compilations, to video analysis, MCC Live Show provides plenty of content for MCC viewers alike.
                     `
 
+const socialsOptions: ISocialsOptions = {invert: true}
 const statsGridOptions: IGridOptions = {bigHeaders: true}
 const statsContentOptions: IContentOptions = {contentPaddingHeight: 6}
 const ytContentOptions: IContentOptions = {noBackgroundColourOnImage: true}
@@ -25,6 +27,7 @@ export default function Page() {
                     subtext="MCC Live Show is a fan-made project for a Minecraft tournament, MC Championship, but it's not an ordinary fan-made project..."
                     image="/backgrounds/mccliveshow.png"/>
             <Content content={<Description text={description}/>}/>
+            <Content content={<Socials type="mccliveshow" size={50} options={socialsOptions}/>}/>
             <Content content={<Grid elements={dataContent} iconSize={90}/>} 
                      background="lightgray"/>
             <Content header="In Numbers" content={<Grid elements={dataStatistics} options={statsGridOptions}/>} footer="As of June 2026" 
