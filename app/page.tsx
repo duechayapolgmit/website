@@ -9,12 +9,12 @@ export default function Home() {
                   bg-black/75 font-sans p-4">
         <span className="text-2xl font-metropolis-black uppercase">This is</span>
         <img className="mt-1" src={"/logo.png"}/>
-        <div className="mt-3 text-xl">
+        <div className="mt-3 text-lg md:text-xl">
           Hello, it's me Due, or Duechayapol <i>{"(pronounced Due-cha-ya-pol) "}</i> on the Internet. <br/>
           I am a Thai software engineer, currently living in Ireland, with a Masters in Computing. I also do content creation and live commentary on the side as well, with this tiny thing called MCC Live Show.<br/>
           Below are my projects and portfolio that I have done!
         </div>
-        <div className="flex mt-6 content-center items-stretch">
+        <div className="flex flex-col md:flex-row mt-6 content-center items-stretch gap-2">
           <HomeButton name="Software / Web Development" link="/dev" />
           <HomeButton name="MCC Live Show" link="/mccliveshow" />
         </div>

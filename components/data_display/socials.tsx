@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 import config from '@/config.json'
 import { getSocials } from '@/lib/socials';
+import Link from 'next/link';
 
 interface ISocial {
   name: string,
@@ -21,7 +22,7 @@ export function Socials({type, size}: {type: string, size: number}) {
       return (social(soc))
     })
     return (
-      <div className="flex">
+      <div className="flex align-center">
         {lst}
       </div>
     )
@@ -31,9 +32,9 @@ export function Socials({type, size}: {type: string, size: number}) {
   const social = (soc: string) => {
     const data = getSocials(soc, type)
     return (
-      <a key={data.name} className="mx-2" target={"_blank"} href={data.link}>
+      <Link key={data.name} className="mx-1 hover:border-white border border-transparent p-1 transition" target={"_blank"} href={data.link}>
         <Image alt={data.name} src={data.icon} width={size} height={size}/>
-      </a>
+      </Link>
     )
   }
 
