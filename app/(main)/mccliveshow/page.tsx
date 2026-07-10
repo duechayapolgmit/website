@@ -17,7 +17,7 @@ const description = `
 
 const socialsOptions: ISocialsOptions = {invert: true}
 const statsGridOptions: IGridOptions = {bigHeaders: true}
-const statsContentOptions: IContentOptions = {contentPaddingHeight: 6}
+const statsContentOptions: IContentOptions = {headerPaddingHeight: 0, contentPaddingHeight: 6}
 const lsBackgroundContentOptions: IContentOptions = {noBackgroundColourOnImage: true}
 
 export default function Page() {

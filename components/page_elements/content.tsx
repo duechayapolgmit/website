@@ -1,4 +1,5 @@
 export interface IContentOptions {
+    headerPaddingHeight?: number,
     contentPaddingHeight?: number,
     noBackgroundColourOnImage?: boolean
 }
@@ -28,11 +29,18 @@ export default function Content(
         return {};
     }
 
+    const getHeaderStyle = () => {
+        if (options?.headerPaddingHeight != null) return {
+            paddingBottom: options.headerPaddingHeight+"em"};
+        return {paddingBottom: "0.5em"};
+    }
+
     return (
         <div className={getAllClassName()}
             style={getAllStyle()}>
             {header == "" ? "" : 
-                <h1 className="font-metropolis-black text-5xl uppercase pb-6">
+                <h1 className="font-metropolis-black text-5xl uppercase"
+                    style={getHeaderStyle()}>
                     {header}
                 </h1>}
             <div style={getContentStyle()}>

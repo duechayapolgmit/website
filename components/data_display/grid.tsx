@@ -53,7 +53,7 @@ export default function Grid({elements, iconSize = 100, options}: {elements: IGr
         });
 
         return (
-            <div className='w-full flex flex-col md:flex-row flex-auto justify-around gap-2'>
+            <div className='min-w-full flex flex-col md:flex-row flex-auto justify-around gap-2'>
                 {lstParts}
             </div>
         )

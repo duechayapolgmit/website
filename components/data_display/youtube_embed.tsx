@@ -8,7 +8,10 @@ export default function YouTubeEmbed ({description, link}: {description: string,
                 {description}
             </div>
             <div className="flex justify-center pt-2">
-                <iframe className="min-w-full min-h-150" src={link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <iframe className="min-w-100 min-h-50 md:min-w-full md:min-h-150" src={link} 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
             <div className="text-xl pt-3 text-center ">
                 <Link className="bg-lime-500 mt-2 mr-2 p-2 text-black rounded-xl"
