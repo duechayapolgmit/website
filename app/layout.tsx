@@ -30,9 +30,7 @@ export default function RootLayout({
       className={`h-full antialiased `}
     >
       <body className="min-h-full min-w-full flex flex-col items-center justify-center">
-        <ViewTransition enter="">
-          {children}
-        </ViewTransition>
+        {children}
       </body>
     </html>
   );
