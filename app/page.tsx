@@ -7,7 +7,7 @@ export default function Home() {
                     bg-radial from-teal-400 to-teal-800">
       <div className="flex flex-col flex-1 items-center justify-center max-w-250
                   bg-black/75 font-sans p-4">
-        <span className="text-2xl font-metropolis-black uppercase">This is</span>
+        <span className="text-2xl md:text-4xl font-metropolis">This is</span>
         <img className="mt-1" src={"/logo.png"}/>
         <div className="mt-3 text-lg md:text-xl">
           Hello, it's me Due, or Duechayapol <i>{"(pronounced Due-cha-ya-pol) "}</i> on the Internet. <br/>
