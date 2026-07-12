@@ -5,14 +5,12 @@
 
 :root {
   --background: #14b8a6;
-  --foreground: #171717;
+  --foreground: #ffffff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 
   --font-metropolis: Metropolis;
   --font-metropolis-bold: "Metropolis Bold";
